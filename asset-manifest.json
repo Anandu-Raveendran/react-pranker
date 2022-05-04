@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-pranker/static/css/main.073c9b0a.css",
+    "main.js": "/react-pranker/static/js/main.41d641a8.js",
+    "static/js/787.8ff8c207.chunk.js": "/react-pranker/static/js/787.8ff8c207.chunk.js",
+    "static/media/logo.svg": "/react-pranker/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-pranker/index.html",
+    "main.073c9b0a.css.map": "/react-pranker/static/css/main.073c9b0a.css.map",
+    "main.41d641a8.js.map": "/react-pranker/static/js/main.41d641a8.js.map",
+    "787.8ff8c207.chunk.js.map": "/react-pranker/static/js/787.8ff8c207.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.41d641a8.js"
+  ]
+}
