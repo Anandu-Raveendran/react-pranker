@@ -31,7 +31,7 @@ function CreatePrank() {
     }
 
     function copyToClipBoard() {
-        var str = window.origin + "/" + "react-pranker" + "/" + prank + "/" + name;
+        var str = window.origin + "/react-pranker/" + prank + "/" + name;
         navigator.clipboard.writeText(str)
     }
 
