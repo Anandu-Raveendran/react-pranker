@@ -1,0 +1,26 @@
+.maindiv {
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding: 10%;
+    background-Image: url("https://i.gifer.com/origin/71/71b02f352b2b683856778b9ce2e2e954_w200.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+.maindiv h1 {
+    color: white;
+    margin: 5%;
+}
+
+.maindiv Button {
+    margin-top: 10%;
+}
+
+.maindiv h6 {
+    background-color: whitesmoke;
+}
