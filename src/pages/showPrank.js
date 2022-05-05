@@ -18,7 +18,7 @@ function ShowPrank() {
     } else if ("cv".localeCompare(type) == 0) {
         audioSrc = "https://assets.coderrocketfuel.com/pomodoro-times-up.mp3";
     } else if ("rn".localeCompare(type) == 0) {
-        audioSrc = "https://assets.coderrocketfuel.com/pomodoro-times-up.mp3";
+        audioSrc = "https://github.com/Anandu-Raveendran/react-pranker/raw/main/src/screaming.mp3";
     } else if ("mf".localeCompare(type) == 0) {
         audioSrc = "https://assets.coderrocketfuel.com/pomodoro-times-up.mp3";
     } else { //sn case
