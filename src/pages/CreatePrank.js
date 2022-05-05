@@ -13,10 +13,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import ContentCopy from '@mui/icons-material/ContentCopy'
-
 import "./CreatePrank.css"
-import { Share } from "@mui/icons-material";
-
 
 
 function CreatePrank() {

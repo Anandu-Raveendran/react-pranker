@@ -2,7 +2,6 @@
 import React from "react";
 import './Home.css'
 import Button from '@mui/material/Button';
-import Paper from '@mui/material/Paper';
 import { Link } from "react-router-dom";
 
 function Home() {

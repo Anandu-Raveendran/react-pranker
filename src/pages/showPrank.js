@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./showPrank.css";
-import { Howl } from "howler"
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
@@ -16,13 +15,13 @@ function ShowPrank() {
     var audioSrc = "";
 
 
-    if ("sn".localeCompare(type) == 0) { //sex noise
+    if ("sn".localeCompare(type) === 0) { //sex noise
         audioSrc = "https://github.com/Anandu-Raveendran/react-pranker/raw/main/src/sexaudio.mp3";
-    } else if ("cv".localeCompare(type) == 0) { //scary vidio
+    } else if ("cv".localeCompare(type) === 0) { //scary vidio
         audioSrc = "https://github.com/Anandu-Raveendran/react-pranker/raw/main/src/screaming.mp3";
-    } else if ("rn".localeCompare(type) == 0) { //screeming noise
+    } else if ("rn".localeCompare(type) === 0) { //screeming noise
         audioSrc = "https://github.com/Anandu-Raveendran/react-pranker/raw/main/src/screaming.mp3";
-    } else if ("mf".localeCompare(type) == 0) { //middle finger
+    } else if ("mf".localeCompare(type) === 0) { //middle finger
         audioSrc = "https://github.com/Anandu-Raveendran/react-pranker/raw/main/src/dramatic_music.mp3";
     } else { //sn case
         audioSrc = "https://github.com/Anandu-Raveendran/react-pranker/raw/main/src/sexaudio.mp3";
@@ -43,10 +42,10 @@ function ShowPrank() {
             {message()}
             <Button onClick={start}>Show message</Button>
             <div className="prankDiv">
-                {(prankType == "sn") ? prankSn() : ""}
-                {(prankType == "cv") ? prankCv() : ""}
-                {(prankType == "rn") ? prankRn() : ""}
-                {(prankType == "mf") ? prankMf() : ""}
+                {(prankType === "sn") ? prankSn() : ""}
+                {(prankType === "cv") ? prankCv() : ""}
+                {(prankType === "rn") ? prankRn() : ""}
+                {(prankType === "mf") ? prankMf() : ""}
             </div>
 
         </div>
