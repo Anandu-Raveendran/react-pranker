@@ -1,5 +1,7 @@
 name: Deploy to Surge Website   
-on: [push]   
+on: 
+       push:
+              branches: [main]
 jobs:
        build:                           
            runs-on: ubuntu-latest 
@@ -10,12 +12,18 @@ jobs:
              uses: actions/setup-node@v2-beta
              with: 
                node-version: 12 
-           - uses: borales/actions-yarn@v2.0.0 # `yarn install`
-             with:
-               cmd: install 
-           - name: Build React App                              
-             run: yarn build 
+           # Install npm packages
+           - name: Install packages
+             run: npm install
+
+      # Build react app
+           - name: Build the app
+             run: npm run build
+
+      # Install Surge 
            - name: Install Surge
-             run: npm install --global surge  
-           - name: Run surge
-             run: surge ./build myreact_mk.surge.sh --token ${{   secrets.SURGE_TOKEN }}
+             run: npm install -g surge
+
+      # Deploy to the defined URL using the token
+           - name: Deploy to surge
+             run: surge ./build URL_TO_DEPLOY_TO --token ${{  secrets.SURGE_TOKEN }}
