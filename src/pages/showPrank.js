@@ -9,8 +9,9 @@ import CardMedia from '@mui/material/CardMedia';
 function ShowPrank() {
     let { friend } = useParams();
     let { type } = useParams();
-
-    const [prankType, setPrank] = useState("")
+    let [title, setTitle] = useState("Congratulations");
+    let [msg, setMsg] = useState("You have a message from");
+    const [prankType, setPrank] = useState("");
 
     var audioSrc = "";
 
@@ -18,16 +19,19 @@ function ShowPrank() {
     if ("sn".localeCompare(type) == 0) { //sex noise
         audioSrc = "https://github.com/Anandu-Raveendran/react-pranker/raw/main/src/sexaudio.mp3";
     } else if ("cv".localeCompare(type) == 0) { //scary vidio
-
+        audioSrc = "https://github.com/Anandu-Raveendran/react-pranker/raw/main/src/screaming.mp3";
     } else if ("rn".localeCompare(type) == 0) { //screeming noise
         audioSrc = "https://github.com/Anandu-Raveendran/react-pranker/raw/main/src/screaming.mp3";
     } else if ("mf".localeCompare(type) == 0) { //middle finger
+        audioSrc = "https://github.com/Anandu-Raveendran/react-pranker/raw/main/src/dramatic_music.mp3";
     } else { //sn case
         audioSrc = "https://github.com/Anandu-Raveendran/react-pranker/raw/main/src/sexaudio.mp3";
     }
 
     let audio = new Audio(audioSrc)
     const start = () => {
+        setTitle("You got pranked !!")
+        setMsg("by");
         if (audioSrc.length > 0) {
             audio.play()
         }
@@ -51,15 +55,15 @@ function ShowPrank() {
 
     function message() {
         return (<div className="message">
-            <h1>Congratulations</h1>
-            <h6>You have a message from </h6>
+            <h1>{title}</h1>
+            <h6>{msg} </h6>
             <h6><b>{friend}</b></h6>
         </div>)
     }
 
     function createBtn() {
         return (<Link to="/createPrank">
-            <Button variant="contained" className="prankBtn">Prank a friend ></Button>
+            <Button variant="contained" className="prankBtn">Prank a friend </Button>
         </Link>
         );
     }

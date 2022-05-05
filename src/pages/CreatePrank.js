@@ -6,12 +6,65 @@ import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
+import Dialog from '@mui/material/Dialog';
+import DialogTitle from '@mui/material/DialogTitle';
+import Divider from '@mui/material/Divider';
+import Container from '@mui/material/Container';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
+import ContentCopy from '@mui/icons-material/ContentCopy'
+
+import "./CreatePrank.css"
+import { Share } from "@mui/icons-material";
+
 
 
 function CreatePrank() {
 
     const [name, setName] = useState("");
     const [prank, setPrank] = useState("sn")
+    const [dialogOpen, setDialogOpen] = useState(false)
+
+    function prankClicked() {
+        setDialogOpen(true)
+    }
+
+    function handleClose() {
+        setDialogOpen(false)
+    }
+
+    function copyToClipBoard() {
+        var str = window.origin + "/" + prank + "/" + name;
+        navigator.clipboard.writeText(str)
+    }
+
+    function share() {
+
+    }
+
+    function simpleDialog() {
+        return (
+            <Dialog onClose={handleClose} open={dialogOpen}>
+                <DialogTitle>Your prank url is ready</DialogTitle>
+                <Divider />
+                <Container>
+                    <h6>Your prank Url is:</h6>
+                    <p>{window.origin}/{prank}/{name}</p>
+                    <Divider />
+                    <Grid container spacing={0}>
+                        <Grid item xs={7}>
+                            <Button startIcon={<ContentCopy />}
+                                onClick={copyToClipBoard}
+                            >Copy link</Button>
+                        </Grid>
+                        <Grid item xs={5}>
+                            <Button endIcon={<SendIcon />} onClick={share}>Share</Button>
+                        </Grid>
+                    </Grid>
+                    <Divider />
+                </Container >
+            </Dialog >);
+    }
 
     return (
 
@@ -35,7 +88,10 @@ function CreatePrank() {
                 <Grid item xs={6}>
                     <Card className="item" >
                         <CardActionArea
-                            onClick={() => setPrank("sn")}
+                            onClick={() => {
+                                setPrank("sn")
+                                prankClicked()
+                            }}
                         >
                             <CardMedia
                                 component="img"
@@ -58,7 +114,10 @@ function CreatePrank() {
                 <Grid item xs={6}>
                     <Card className="item">
                         <CardActionArea
-                            onClick={() => setPrank("rn")}
+                            onClick={() => {
+                                setPrank("rn")
+                                prankClicked()
+                            }}
                         >
                             <CardMedia
                                 component="img"
@@ -80,7 +139,10 @@ function CreatePrank() {
                 <Grid item xs={6}>
                     <Card className="item">
                         <CardActionArea
-                            onClick={() => setPrank("mf")}
+                            onClick={() => {
+                                setPrank("mf")
+                                prankClicked()
+                            }}
                         >
                             <CardMedia
                                 component="img"
@@ -102,7 +164,10 @@ function CreatePrank() {
                 <Grid item xs={6}>
                     <Card className="item">
                         <CardActionArea
-                            onClick={() => setPrank("cv")}
+                            onClick={() => {
+                                setPrank("cv")
+                                prankClicked()
+                            }}
                         >
                             <CardMedia
                                 component="img"
@@ -124,8 +189,7 @@ function CreatePrank() {
 
             <br />
             <br />
-            <h6>Your prank Url is:</h6>
-            <p>{window.origin}/{prank}/{name}</p>
+            {simpleDialog()}
 
         </div>
     )
