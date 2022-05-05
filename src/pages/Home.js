@@ -14,7 +14,7 @@ function Home() {
 
             <h6>Select a prank, add your name and send the link to your firends</h6>
             <h6>And bham!!</h6>
-            <Link to="/createPrank">
+            <Link to="/react-pranker/createPrank">
                 <Button variant="contained" >Prank a firend</Button>
             </Link>
         </div>

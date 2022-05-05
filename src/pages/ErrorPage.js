@@ -6,9 +6,9 @@ function ErrorPage() {
     return (
         <div>
             <h1>Oops this is not a valid url.</h1>
-            <Link to="/">Home</Link>
+            <Link to="/react-pranker/">Home</Link>
             <br />
-            <Link to="createPrank"> Create a new prank</Link>
+            <Link to="/react-pranker/createPrank"> Create a new prank</Link>
         </div >
     )
 }

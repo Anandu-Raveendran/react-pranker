@@ -31,7 +31,7 @@ function CreatePrank() {
     }
 
     function copyToClipBoard() {
-        var str = window.origin + "/" + prank + "/" + name;
+        var str = window.origin + "/" + "react-pranker" + "/" + prank + "/" + name;
         navigator.clipboard.writeText(str)
     }
 
@@ -46,7 +46,7 @@ function CreatePrank() {
                 <Divider />
                 <Container>
                     <h6>Your prank Url is:</h6>
-                    <p>{window.origin}/{prank}/{name}</p>
+                    <p>'{window.origin}/react-pranker/{prank}/{name}'</p>
                     <Divider />
                     <Grid container spacing={0}>
                         <Grid item xs={7}>

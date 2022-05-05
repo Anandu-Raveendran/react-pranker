@@ -61,7 +61,7 @@ function ShowPrank() {
     }
 
     function createBtn() {
-        return (<Link to="/createPrank">
+        return (<Link to="/react-pranker/createPrank">
             <Button variant="contained" className="prankBtn">Prank a friend </Button>
         </Link>
         );

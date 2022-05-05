@@ -21,9 +21,9 @@ function App() {
             </div>
             <Card className='mainsection'>
               <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/:type/:friend' element={<ShowPrank />} />
-                <Route path='/createPrank' element={<CreatePrank />} />
+                <Route path='/react-pranker/:type/:friend' element={<ShowPrank />} />
+                <Route path='/react-pranker/createPrank' element={<CreatePrank />} />
+                <Route path='/react-pranker/' element={<Home />} />
                 <Route path='/*' element={<ErrorPage />} />
 
               </Routes>
