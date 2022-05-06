@@ -17,12 +17,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -119,7 +113,7 @@ _Below is an example of how you can instruct your audience on installing and set
 2. install Material UI using
     ```sh
     npm install @mui/material @emotion/react @emotion/styled
-    ```sh
+    ```
 3. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
@@ -139,7 +133,7 @@ _Below is an example of how you can instruct your audience on installing and set
 Start the react application using:
 ```sh
 npm start
-```sh
+```
 
 Now open the browser to the correct url and port created by the server.
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -196,20 +190,3 @@ Project Link: [https://github.com/Anandu-Raveendran/react-pranker)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Anandu-Raveendran/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/Anandu-Raveendran/react-pranker/contributors
-[forks-shield]: https://img.shields.io/github/forks/Anandu-Raveendran/react-pranker.svg?style=for-the-badge
-[forks-url]: https://github.com/Anandu-Raveendran/react-pranker/network/members
-[stars-shield]: https://img.shields.io/github/stars/Anandu-Raveendran/react-pranker.svg?style=for-the-badge
-[stars-url]: https://github.com/Anandu-Raveendran/react-pranker/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Anandu-Raveendran/react-pranker.svg?style=for-the-badge
-[issues-url]: https://github.com/Anandu-Raveendran/react-pranker/issues
-[license-shield]: https://img.shields.io/github/license/Anandu-Raveendran/react-pranker.svg?style=for-the-badge
-[license-url]: https://github.com/Anandu-Raveendran/react-pranker/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/anandu-raveendran-5b8b77119/
-[product-screenshot]: images/screenshot.png
