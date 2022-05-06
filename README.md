@@ -24,7 +24,7 @@
 <br />
 <div align="center">
   <a href="#">
-    <img src="https://user-images.githubusercontent.com/29880948/167053241-32c8b68d-4352-4fd7-ad2b-1c8117355337.png
+    <img src="https://image.shutterstock.com/image-vector/prank-logo-hand-lettering-style-260nw-1407369458.jpg"
 " alt="Logo" width="80" height="80">
   </a>
 
