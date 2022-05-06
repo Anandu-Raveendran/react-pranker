@@ -4,15 +4,19 @@ import "./showPrank.css";
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
+import { useSearchParams } from "react-router-dom";
 
 function ShowPrank() {
-    let { friend } = useParams();
-    let { type } = useParams();
+    const [searchParams] = useSearchParams();
+    let friend = searchParams.get("friend")
+    let type = searchParams.get("pr")
     let [title, setTitle] = useState("Congratulations");
     let [msg, setMsg] = useState("You have a message from");
-    const [prankType, setPrank] = useState("");
+    const [prankType, setPrankType] = useState("");
 
     var audioSrc = "";
+
+    console.log("Friend " + friend + " Type " + type)
 
 
     if ("sn".localeCompare(type) === 0) { //sex noise
@@ -29,12 +33,12 @@ function ShowPrank() {
 
     let audio = new Audio(audioSrc)
     const start = () => {
+        setPrankType(type);
         setTitle("You got pranked !!")
         setMsg("by");
         if (audioSrc.length > 0) {
             audio.play()
         }
-        setPrank(type);
     }
 
     return (
@@ -55,8 +59,8 @@ function ShowPrank() {
     function message() {
         return (<div className="message">
             <h1>{title}</h1>
-            <h6>{msg} </h6>
-            <h6><b>{friend}</b></h6>
+            <h4>{msg} </h4>
+            <h3><b>{friend}</b></h3>
         </div>)
     }
 
