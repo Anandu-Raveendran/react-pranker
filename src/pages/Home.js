@@ -3,14 +3,11 @@ import React from "react";
 import './Home.css'
 import Button from '@mui/material/Button';
 import { Link, useSearchParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import ShowPrank from "./showPrank";
 
 function Home() {
     const [searchParams] = useSearchParams();
-    let friend = searchParams.get("friend")
     let type = searchParams.get("pr")
-    const navigate = useNavigate();
 
     console.log("Type is " + type)
     if (type) {
