@@ -1,7 +1,7 @@
 {
   "name": "react-pranker",
   "version": "0.1.0",
-  "homepage": "https://Anandu-Raveendran.github.io/react-pranker",
+  "homepage": "https://Anandu-Raveendran.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
