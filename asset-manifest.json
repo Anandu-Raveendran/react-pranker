@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-pranker/static/css/main.7f56b341.css",
-    "main.js": "/react-pranker/static/js/main.76696fa6.js",
+    "main.js": "/react-pranker/static/js/main.711256f7.js",
     "static/js/787.8ff8c207.chunk.js": "/react-pranker/static/js/787.8ff8c207.chunk.js",
     "static/media/roboto-all-500-normal.woff": "/react-pranker/static/media/roboto-all-500-normal.52cb737b682eb9661ee1.woff",
     "static/media/roboto-all-700-normal.woff": "/react-pranker/static/media/roboto-all-700-normal.ef6d1d09b20b877fee4e.woff",
@@ -37,11 +37,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/react-pranker/static/media/roboto-greek-ext-700-normal.9674bc0ae12c2551d9d1.woff2",
     "index.html": "/react-pranker/index.html",
     "main.7f56b341.css.map": "/react-pranker/static/css/main.7f56b341.css.map",
-    "main.76696fa6.js.map": "/react-pranker/static/js/main.76696fa6.js.map",
+    "main.711256f7.js.map": "/react-pranker/static/js/main.711256f7.js.map",
     "787.8ff8c207.chunk.js.map": "/react-pranker/static/js/787.8ff8c207.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f56b341.css",
-    "static/js/main.76696fa6.js"
+    "static/js/main.711256f7.js"
   ]
 }
