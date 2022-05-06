@@ -1,7 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home'
-import ErrorPage from './pages/ErrorPage';
 import CreatePrank from './pages/CreatePrank';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
