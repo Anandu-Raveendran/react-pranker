@@ -76,7 +76,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 This is a simple react application where a user can prank their friends by sending them a link to the application with their name and prank type embedded in the url.
 
