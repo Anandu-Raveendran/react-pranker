@@ -186,7 +186,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [Anandu_Raveendran](https://www.linkedin.com/in/anandu-raveendran-5b8b77119)
 
-Project Link: [https://github.com/Anandu-Raveendran/react-pranker)
+Project Codebase: [https://github.com/Anandu-Raveendran/react-pranker)
+
+Project Demo : [https://anandu-raveendran.github.io/react-pranker)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
