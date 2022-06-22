@@ -13,6 +13,8 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import ContentCopy from '@mui/icons-material/ContentCopy'
+import StarBorderIcon from '@mui/icons-material/StarBorder';
+import DoneIcon from '@mui/icons-material/Done';
 import "./CreatePrank.css"
 
 
@@ -21,6 +23,7 @@ function CreatePrank() {
     const [name, setName] = useState("");
     const [prank, setPrank] = useState("sn")
     const [dialogOpen, setDialogOpen] = useState(false)
+    const [showSupport, setShowSupport] = useState(false)
 
     function prankClicked() {
         setDialogOpen(true)
@@ -33,10 +36,11 @@ function CreatePrank() {
     function copyToClipBoard() {
         var str = window.origin + "/react-pranker?pr=" + prank + "&friend=" + name;
         navigator.clipboard.writeText(str)
+        setShowSupport(true)
     }
 
     function share() {
-
+        copyToClipBoard()
     }
 
     function simpleDialog() {
@@ -57,10 +61,36 @@ function CreatePrank() {
                         <Grid item xs={5}>
                             <Button endIcon={<SendIcon />} onClick={share}>Share</Button>
                         </Grid>
+                        {support()}
                     </Grid>
                     <Divider />
                 </Container >
             </Dialog >);
+    }
+
+    function support() {
+        if (showSupport) {
+            return (
+                < Grid item >
+                    <Divider />
+                    <Button startIcon={<DoneIcon />} style={{ color: 'gray', textAlign: 'center', }}>Link is copied to clipboard</Button>
+                    <h3>Support me</h3>
+                    <a href="https://www.buymeacoffee.com/47anandu009">
+                        <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="47anandu009" />
+                    </a>
+
+                    <a href="https://github.com/Anandu-Raveendran/react-pranker">
+                        <Button startIcon={<StarBorderIcon />} onClick={share}>Star this page on GitHub</Button>
+                    </a>
+                    <br />
+                    <br />
+                    <Divider />
+
+                </Grid >
+            )
+        } else {
+            return null
+        }
     }
 
     return (

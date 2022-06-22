@@ -20,6 +20,14 @@ function App() {
             <Card className='mainsection'>
               <Routes>
                 <Route path='/react-pranker/createPrank' element={<CreatePrank />} />
+                <Route path='/react-pranker/github' component={() => {
+                  window.location.href = 'https://github.com/Anandu-Raveendran/react-pranker';
+                  return null;
+                }} />
+                <Route path='/react-pranker/coffee' component={() => {
+                  window.location.replace('https://www.buymeacoffee.com/47anandu009');
+                  return null;
+                }} />
                 <Route path='/react-pranker/' element={<Home />} />
                 <Route path='/*' element={<Home />} />
 
