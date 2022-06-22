@@ -191,3 +191,10 @@ Project Demo : [https://anandu-raveendran.github.io/react-pranker)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+                                
+<h3 align="left">Support:</h3>
+<p><a href="https://www.buymeacoffee.com/47anandu009"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="47anandu009" /></a></p>
+<br/>
+<br/>
+<h3 align="center"> Hire me? shoot me a mail at 47anandu007@gmail.com</h3>
+<br><br>
