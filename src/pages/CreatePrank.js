@@ -74,7 +74,9 @@ function CreatePrank() {
                 < Grid item >
                     <Divider />
                     <Button startIcon={<DoneIcon />} style={{ color: 'gray', textAlign: 'center', }}>Link is copied to clipboard</Button>
+
                     <h3>Support me</h3>
+
                     <a href="https://www.buymeacoffee.com/47anandu009">
                         <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="47anandu009" />
                     </a>
